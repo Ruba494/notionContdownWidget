@@ -89,12 +89,14 @@ let timer = setInterval(function() {
   // let months=Math.ceil(Math.floor(diff / (1000 * 60 * 60 * 24*7))/7)+1;
   
   
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24)+1);
 
   
 let weeks=Math.ceil(days/7);
+    if(weeks<0) weeks=0;
   
 let months=Math.ceil(weeks/7)+1;
+     if(months<0) months=0;
   
   // display
   
