@@ -90,9 +90,9 @@ let timer = setInterval(function() {
   
   
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-days=days+1;
+
   
-let weeks=days/7;
+let weeks=Math.ceil(days/7);
     
   
 let months=Math.ceil(weeks/7)+1;
